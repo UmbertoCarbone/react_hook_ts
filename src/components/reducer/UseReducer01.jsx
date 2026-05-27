@@ -34,8 +34,8 @@ export default function UseReducer01() {
     <div className="esercizio">
       <h2>ES 01 - Contatore</h2>
       <p>Contatore: {state.count}</p>
-      <button onClick={decrementa}>-</button>
-      <button onClick={incrementa}>+</button>
+      <button onClick={decrementa}>-1</button>
+      <button onClick={incrementa}>+1</button>
       <button onClick={azzera}>0</button>
     </div>
   );
