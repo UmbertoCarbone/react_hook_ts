@@ -1,6 +1,7 @@
 import UseReducer01 from "../components/reducer/UseReducer01";
 import UseReducer02 from "../components/reducer/UseReducer02";
 import UseReducer03 from "../components/reducer/UseReducer03";
+import UseReducer04 from "../components/reducer/UseReducer04";
 
 export default function ReducePage() {
   return (
@@ -11,6 +12,7 @@ export default function ReducePage() {
       <UseReducer01 />
       <UseReducer02 />
       <UseReducer03 />
+      <UseReducer04 />
     </>
   );
 }

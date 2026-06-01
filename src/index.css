@@ -90,6 +90,82 @@ body {
   background-color: #555;
 }
 
+/* --- Carrello ES04 --- */
+.carrello-catalogo {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.carrello-catalogo ul {
+  list-style: none;
+  padding: 0;
+  min-width: 220px;
+}
+
+.carrello-catalogo li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.carrello-catalogo li span {
+  flex: 1;
+}
+
+.carrello-sezione {
+  flex: 1;
+  min-width: 220px;
+}
+
+.carrello-sezione h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.carrello-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.carrello-totale {
+  margin-top: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-aggiungi:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  background-color: #999;
+}
+
+.btn-rimuovi {
+  background-color: #c0392b;
+}
+
+.btn-rimuovi:hover {
+  background-color: #e74c3c;
+}
+
+.btn-svuota {
+  background-color: #7f8c8d;
+  margin-top: 12px;
+}
+
+.btn-svuota:hover {
+  background-color: #95a5a6;
+}
+
 
 .esercizio {
     background-color: white;
