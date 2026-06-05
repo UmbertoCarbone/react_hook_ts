@@ -1,4 +1,5 @@
 import UseRef01 from "../components/ref/UseRef01"
+import UseRef02 from "../components/ref/UseRef02"
 
 export default function RefPage() {
   return (
@@ -7,6 +8,7 @@ export default function RefPage() {
         Esercizi con useRef
       </h1>
       <UseRef01/>
+      |<UseRef02/>
     </>
   );
 }
