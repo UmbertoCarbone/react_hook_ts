@@ -1,33 +1,28 @@
 import { useRef, useState } from "react";
 
 export default function UseRef01() {
-  const inputRef = useRef(null);
-  const contatoreRef = useRef(0); // non causa re-render
-  const [messaggio, setMessaggio] = useState("");
+  const usernameRef = useRef();
 
-  const mettiAFuoco = () => {
-    inputRef.current.focus();
+  const focusInput = () => {
+    usernameRef.current.focus();
   };
 
-  const svuota = () => {
-    inputRef.current.value = "";
-    inputRef.current.focus();
+  const clearInput = () => {
+    usernameRef.current.value = "";
   };
 
-  const aggiungiClick = () => {
-    contatoreRef.current += 1;
-    setMessaggio(`Hai cliccato ${contatoreRef.current} volte (senza re-render extra)`);
-  };
-
+const console_log_username = () => {
+console.log(usernameRef.current.value)
+usernameRef.current.value = "";
+}
   return (
+    
     <div className="esercizio">
-      <h2>ES 01 - Riferimento DOM con useRef</h2>
-      <input ref={inputRef} type="text" placeholder="Scrivi qualcosa..." />
-      <button onClick={mettiAFuoco}>Metti a fuoco</button>
-      <button onClick={svuota}>Svuota</button>
-      <hr />
-      <p>{messaggio || "Clicca il bottone sotto"}</p>
-      <button onClick={aggiungiClick}>Conta click (ref, non state)</button>
+      <h2>ES 01 - UseRef</h2>
+      <input type="text" placeholder="Username" ref={usernameRef} />
+      <button onClick={focusInput}>Dai il focus</button>
+      <button onClick={clearInput}>Svuota il campo</button>
+      <button onClick={console_log_username}>Stampa in Console</button>
     </div>
   );
 }
