@@ -20,7 +20,7 @@ export default function UseMemo_02() {
     setNuovoCibo("");
   };
 
-  // 5. useMemo: Conta le lettere SOLO quando 'listaSpesa' cambia davvero
+  // 5. useMemo: Conta le lettere SOLO quando 'listaSpesa' cambia davvero!
   const totaleLettere = useMemo(() => {
     return listaSpesa.reduce((totale, elemento) => {
       console.log("Calcolo in corso... 🧠");
