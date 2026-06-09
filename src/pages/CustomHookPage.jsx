@@ -1,3 +1,4 @@
+import Button_returnHomePage from "../components/Button_returnHomePage";
 
 
 export default function CustomHookPage() {
@@ -7,6 +8,7 @@ export default function CustomHookPage() {
         Esercizi con Custom Hook
       </h1>
       
+<Button_returnHomePage />
     </>
   );
 }

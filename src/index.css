@@ -1,12 +1,133 @@
 /* --- Card utenti riutilizzabile --- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.center-content {
+  display: flex;
+
+
+
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+
+
+
+
+
+
 .utenti-flex-container {
   display: flex;
+
+
+
+
   gap: 16px;
   margin-top: 24px;
   flex-wrap: nowrap;
   overflow-x: auto;
   padding-bottom: 8px;
 }
+
+
 
 /* Scroll orizzontale riutilizzabile */
 .scroll-x {
@@ -15,9 +136,64 @@
   width: 100%;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .utente-card {
   border: 1px solid #ccc;
-  border-radius: 8px;
+    border-radius: 8px;
+
+
+
   padding: 12px 20px;
   min-width: 120px;
   background: #fafafa;
@@ -27,10 +203,23 @@
   align-items: center;
 }
 
+
+
+
+
 .utente-nome {
   font-weight: bold;
   font-size: 1.1rem;
 }
+
+
+
+
+
+
+
+
+
 
 .utente-eta {
   color: #555;
@@ -49,6 +238,27 @@
   margin-right: 8px;
   margin-bottom: 8px;
 }
+
+.link-group {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.button-style {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.button-style:hover {
+  background-color: #45a049;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -164,30 +374,4 @@ body {
 
 .btn-svuota:hover {
   background-color: #95a5a6;
-}
-
-
-.esercizio {
-    background-color: white;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.esercizio h2 {
-    margin-bottom: 16px;
-    font-size: 1.2rem;
-    color: #333;
-}
-
-.esercizio button {
-    margin-right: 8px;
-    margin-top: 12px;
-    padding: 6px 14px;
-    border: none;
-    border-radius: 4px;
-    background-color: #333;
-    color: white;
-    cursor: pointer;
 }
